@@ -43,6 +43,14 @@ app.get('/',(req,res)=>{
   })
 });
 
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+
+    pageTitle:'Project page',
+    projectMessage:'Displays list of projects'
+  })
+});
+
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
     pageTitle:'Hello'
